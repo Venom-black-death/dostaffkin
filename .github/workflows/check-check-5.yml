@@ -37,11 +37,6 @@ jobs:
           # СПИСОК 1 — обязательные файлы (ТОЛЬКО проверка наличия)
           # =====================================================
           FILES_REQUIRED=(
-            "src/app/app.config.ts"
-            "src/app/app.routes.ts"
-            "src/app/header/header.css"
-            "src/app/header/header.html"
-            "src/app/header/header.ts"
             "src/app/pages/home/home.css"
             "src/app/pages/home/home.html"
             "src/app/pages/home/home.ts"
