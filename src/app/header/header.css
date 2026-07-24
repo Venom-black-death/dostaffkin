@@ -1,0 +1,90 @@
+.header {
+    border-radius: 18px; /*Закругление краёв рамки*/
+    box-shadow: 0 7px 20px 0 #0000002E; /*Тень рамки*/
+    backdrop-filter: blur(10px);
+    background: #ffffff; /*цвет фона*/
+    left: 20px; /*смещение*/
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    position: fixed;
+    right: 20px; /*смещение*/
+    top: 20px; /*смещение*/
+    padding: 14px 18px; /*Отступы*/
+    height: 70px; /*высота*/
+    display: flex; /*Режим отображения*/
+    align-items: center; /*Выравнивание*/
+    z-index: 6;
+}
+
+.header-brand { /**/
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 10px;
+}
+
+.header-logo { /*логотип*/
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    background: #FFCC00;
+    display: grid;
+    place-items: center;
+    font-weight: bold;
+    color: #111;
+}
+
+.header-title { /*Текст*/
+    font-size: 18px;
+    font-weight: bold;
+    color: #111111;
+    text-decoration: none;
+}
+
+.header-menu { /*выравнивание*/
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.header-link { /*Настройка шрифта ссылок*/
+    font-size: 14px;
+    color: #111111;
+    text-decoration: none;
+} 
+
+@media (max-width: 767px) {
+    .header {
+        left: 10px;
+        right: 10px;
+        top: 10px;
+    }
+
+    .header-link span {
+        display: none;
+    }
+
+    .header-menu {
+        gap: 20px;
+        justify-content: flex-start;
+        margin: 0 0 0 30px;
+        position: static;
+        transform: none;
+    }
+}
+
+@media (max-width: 420px) {
+    .header-title {
+        display: none;
+    }
+}
+
+@media (max-width: 374px) {
+    .header-menu {
+        gap: 10px;
+        margin: 0 0 0 10px;
+    }
+}
