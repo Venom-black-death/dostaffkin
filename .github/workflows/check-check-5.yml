@@ -37,6 +37,14 @@ jobs:
           # СПИСОК 1 — обязательные файлы (ТОЛЬКО проверка наличия)
           # =====================================================
           FILES_REQUIRED=(
+            "src/index.html"
+            "src/main.ts"
+            "src/styles.css"
+            "src/app/app.config.ts"
+            "src/app/app.routes.ts"
+            "src/app/header/header.css"
+            "src/app/header/header.html"
+            "src/app/header/header.ts"
             "src/app/pages/home/home.css"
             "src/app/pages/home/home.html"
             "src/app/pages/home/home.ts"
@@ -47,6 +55,24 @@ jobs:
             "src/app/pages/track/track.css"
             "src/app/pages/track/track.html"
             "src/app/pages/track/track.ts"
+            "public/fonts/Roboto-Bold.ttf"
+            "public/fonts/Roboto-Medium.ttf"
+            "public/fonts/Roboto-Regular.ttf"
+            "public/images/icons/regular.svg"
+            "public/images/icons/fast.svg"
+            "public/images/icons/created.svg"
+            "public/images/icons/in-way.svg"
+            "public/images/icons/ready.svg"
+            "public/images/icons/done.svg"
+            "public/images/track-bg.png"
+            "public/images/order-bg.png"
+            "public/images/main-image.png"
+            "public/images/sizes/xs.png"
+            "public/images/sizes/s.png"
+            "public/images/sizes/m.png"
+            "public/images/sizes/l.png"
+            "public/images/sizes/xl.png"
+            "public/images/sizes/max.png"
           )
 
           # =====================================================
@@ -56,6 +82,21 @@ jobs:
             "src/index.html"
             "src/main.ts"
             "src/styles.css"
+            "src/app/app.config.ts"
+            "src/app/app.routes.ts"
+            "src/app/header/header.css"
+            "src/app/header/header.html"
+            "src/app/header/header.ts"
+            "src/app/pages/home/home.css"
+            "src/app/pages/home/home.html"
+            "src/app/pages/home/home.ts"
+            "src/app/pages/order/order.css"
+            "src/app/pages/order/order.html"
+            "src/app/pages/order/order.ts"
+            "src/app/pages/order/order.config.ts"
+            "src/app/pages/track/track.css"
+            "src/app/pages/track/track.html"
+            "src/app/pages/track/track.ts"
           )
 
           mkdir -p .norm/ref .norm/student .diffs report
